@@ -121,7 +121,7 @@ bool rgb_matrix_indicators_user(void) {
   switch (biton32(layer_state)) {
     case 0:
       if (get_mods() & MOD_MASK_CTRL) {
-        set_layer_color(7);
+        set_layer_color(6);
         } else {
           set_layer_color(0);
         }
