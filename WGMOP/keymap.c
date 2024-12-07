@@ -132,7 +132,11 @@ bool rgb_matrix_indicators_user(void) {
   if (keyboard_config.disable_layer_led) { return false; }
   switch (biton32(layer_state)) {
     case 0:
-      set_layer_color(0);
+      if (get_mods() & MOD_MASK_CTRL) {
+        set_layer_color(7);
+        } else {
+          set_layer_color(0);
+        }
       break;
     case 1:
       set_layer_color(1);
@@ -160,9 +164,7 @@ bool rgb_matrix_indicators_user(void) {
       rgb_matrix_set_color_all(0, 0, 0);
     break;
   }
-  if (get_mods() & MOD_MASK_CTRL) {
-    set_layer_color(7);
-    }
+  
   return true;
 }
 
