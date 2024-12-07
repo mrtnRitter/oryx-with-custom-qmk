@@ -192,6 +192,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             rgblight_sethsv(0,255,255);
         }
         return false;
+    case KC_LEFT_CTRL:
+        int currLayer = biton32(layer_state)
+        if (record->event.pressed) {
+          set_layer_color(7)
+          } else {
+          set_layer_color(currLayer)
+        }
+        return false;
   }
   return true;
 }
