@@ -160,6 +160,9 @@ bool rgb_matrix_indicators_user(void) {
       rgb_matrix_set_color_all(0, 0, 0);
     break;
   }
+  if (get_mods() & MOD_MASK_CTRL) {
+    set_layer_color(7);
+    }
   return true;
 }
 
@@ -192,11 +195,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             rgblight_sethsv(0,255,255);
         }
         return false;
-    case KC_LEFT_CTRL:
-        if (record->event.pressed) {
-          set_layer_color(7);
-        } 
-        return true;
   }
   return true;
 }
