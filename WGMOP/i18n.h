@@ -5,6 +5,7 @@
 #define DE_AE KC_QUOT
 #define DE_MINS KC_SLSH
 #define DE_SS KC_MINS
+#define DE_EQL S(KC_0)
 #define DE_LPRN S(KC_8)
 #define DE_RPRN S(KC_9)
 #define DE_SLSH S(KC_7)
