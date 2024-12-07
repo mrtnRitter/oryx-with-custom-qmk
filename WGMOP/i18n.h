@@ -22,3 +22,13 @@
 #define DE_ACUT KC_EQL
 #define DE_MORE S(KC_NUBS)
 #define DE_LESS KC_NUBS
+#define DE_TILD ALGR(KC_RBRC)
+#define DE_DLR S(KC_4)
+#define DE_EURO ALGR(KC_E)
+#define DE_PERC S(KC_5)
+#define DE_PARA S(KC_3)
+#define DE_LBRC ALGR(KC_8)
+#define DE_LCBR ALGR(KC_7)
+#define DE_PIPE ALGR(KC_NUBS)
+#define DE_RCBR ALGR(KC_0)
+#define DE_RBRC ALGR(KC_9)
