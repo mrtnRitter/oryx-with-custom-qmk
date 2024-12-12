@@ -113,10 +113,11 @@ bool rgb_matrix_indicators_user(void) {
   switch (biton32(layer_state)) {
     case 0:
       if (get_mods() & MOD_MASK_CTRL) {
-        set_layer_color(5);
-        } else {
-          set_layer_color(0);
-        }
+        int arr_length = sizeof(ledmap) / sizeof(ledmap[0]);
+        set_layer_color(arr_length);
+      } else {
+        set_layer_color(0);
+      }
       break;
     case 1:
       set_layer_color(1);
