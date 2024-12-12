@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_DELETE,      KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_H,           KC_J,           KC_K,           KC_L,           DE_OE,          DE_AE,          
     OSM(MOD_LSFT),  DE_Y,           KC_X,           KC_C,           KC_V,           KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         DE_MINS,        OSM(MOD_LSFT),  
     KC_LEFT_CTRL,   KC_LEFT_GUI,    KC_TRANSPARENT, KC_LEFT_ALT,    KC_ENTER,       KC_TRANSPARENT,                                                                                                 LALT(KC_F4),    DE_SS,          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
-    OSL(1),         KC_TRANSPARENT, KC_TRANSPARENT,                 TO(2),          OSL(1),         KC_SPACE
+    OSL(1),         TT(5),          KC_TRANSPARENT,                 TO(2),          OSL(1),         KC_SPACE
   ),
   [1] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_F2,          KC_TRANSPARENT, KC_7,           KC_8,           KC_9,                                           DE_PERC,        DE_LBRC,        DE_LCBR,        DE_PIPE,        DE_RCBR,        DE_RBRC,        KC_TRANSPARENT, 
@@ -58,6 +58,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [5] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_MS_BTN1,     KC_MS_UP,       KC_MS_BTN2,     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
+  ),
+  [6] = LAYOUT_moonlander(
+    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
@@ -84,7 +92,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
 
     [4] = { {0,0,118}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,118}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,255}, {0,0,0}, {0,255,255}, {0,0,0}, {0,0,0}, {0,255,255}, {0,0,0}, {172,255,255}, {0,0,0}, {0,0,0}, {0,0,118}, {0,0,0}, {0,0,0}, {0,0,255}, {0,0,0}, {171,255,255}, {0,0,0}, {0,0,0}, {87,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,53}, {0,0,0}, {0,0,255}, {0,0,0}, {0,0,255}, {0,0,0}, {0,255,255}, {0,0,0}, {172,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
 
-    [5] = { {0,255,131}, {0,0,0}, {0,0,0}, {0,0,255}, {80,242,183}, {0,0,0}, {0,255,63}, {0,255,255}, {0,255,63}, {0,0,0}, {0,0,0}, {0,255,255}, {80,242,183}, {41,255,255}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,63}, {172,255,255}, {0,0,0}, {0,0,0}, {0,255,63}, {41,255,255}, {80,242,183}, {0,0,0}, {0,0,0}, {0,255,255}, {0,255,63}, {0,255,63}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,63}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,63}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,63}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,63}, {0,255,63}, {0,255,63}, {0,0,0}, {0,255,255}, {0,255,63}, {0,255,63}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
+    [6] = { {0,255,131}, {0,0,0}, {0,0,0}, {0,0,255}, {80,242,183}, {0,0,0}, {0,255,63}, {0,255,255}, {0,255,63}, {0,0,0}, {0,0,0}, {0,255,255}, {80,242,183}, {41,255,255}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,63}, {172,255,255}, {0,0,0}, {0,0,0}, {0,255,63}, {41,255,255}, {80,242,183}, {0,0,0}, {0,0,0}, {0,255,255}, {0,255,63}, {0,255,63}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,63}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,63}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,63}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,63}, {0,255,63}, {0,255,63}, {0,255,63}, {0,0,0}, {0,255,255}, {0,255,63}, {0,255,63}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
 
 };
 
@@ -126,8 +134,8 @@ bool rgb_matrix_indicators_user(void) {
     case 4:
       set_layer_color(4);
       break;
-    case 5:
-      set_layer_color(5);
+    case 6:
+      set_layer_color(6);
       break;
    default:
     if (rgb_matrix_get_flags() == LED_FLAG_NONE)
