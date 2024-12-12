@@ -124,7 +124,7 @@ bool rgb_matrix_indicators_user(void) {
     case 0:
       if (get_mods() & MOD_MASK_CTRL) {
         int arr_length = sizeof(ledmap) / sizeof(ledmap[0]);
-        set_layer_color(arr_length);
+        set_layer_color(arr_length-1);
       } else {
         set_layer_color(0);
       }
