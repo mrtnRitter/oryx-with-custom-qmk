@@ -8,6 +8,7 @@
 #define DE_PIPE ALGR(KC_NUBS)
 #define DE_ACUT KC_EQL
 #define DE_GRV S(KC_EQL)
+#define DE_CIRC KC_GRV
 #define DE_LCBR ALGR(KC_7)
 #define DE_LBRC ALGR(KC_8)
 #define DE_LESS KC_NUBS
