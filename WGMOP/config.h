@@ -1,8 +1,3 @@
-/*
-  Set any config.h overrides for your specific keymap here.
-  See config.h options at https://docs.qmk.fm/#/config_options?id=the-configh-file
-*/
-
 #undef TAPPING_TERM
 #define TAPPING_TERM 175
 
@@ -19,7 +14,7 @@
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX 30
 
-#define SERIAL_NUMBER "WGMOP/gaaeaq"
+#define SERIAL_NUMBER "WGMOP/MaZEwK"
 #define LAYER_STATE_16BIT
 
 #define RGB_MATRIX_STARTUP_SPD 60
