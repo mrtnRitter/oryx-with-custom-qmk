@@ -6,13 +6,13 @@
 #define DE_Z KC_Y
 #define DE_SS KC_MINS
 #define DE_PIPE ALGR(KC_NUBS)
-#define DE_ACUT KC_EQL
 #define DE_GRV S(KC_EQL)
+#define DE_ACUT KC_EQL
 #define DE_CIRC KC_GRV
 #define DE_LCBR ALGR(KC_7)
 #define DE_LBRC ALGR(KC_8)
-#define DE_LESS KC_NUBS
 #define DE_MORE S(KC_NUBS)
+#define DE_LESS KC_NUBS
 #define DE_HASH KC_NUHS
 #define DE_RCBR ALGR(KC_0)
 #define DE_EQL S(KC_0)
