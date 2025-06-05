@@ -10,13 +10,11 @@
 #define DE_SLSH S(KC_7)
 #define DE_BSLS ALGR(KC_MINS)
 #define DE_HASH KC_NUHS
-#define DE_COLN S(KC_DOT)
-#define DE_SCLN S(KC_COMM)
+#define DE_AMPR S(KC_6)
+#define DE_AT ALGR(KC_Q)
 #define DE_MINS KC_SLSH
 #define DE_DQOT S(KC_2)
-#define DE_AMPR S(KC_6)
 #define DE_QST S(KC_MINS)
 #define DE_EXLM S(KC_1)
-#define DE_AT ALGR(KC_Q)
 #define DE_EURO ALGR(KC_E)
 #define DE_EQL S(KC_0)
