@@ -1,7 +1,6 @@
 #define DE_UE KC_LBRC
 #define DE_AE KC_QUOT
 #define DE_OE KC_SCLN
-#define DE_MINS KC_SLSH
 #define DE_Y KC_Z
 #define DE_Z KC_Y
 #define DE_SS KC_MINS
@@ -21,8 +20,9 @@
 #define DE_SLSH S(KC_7)
 #define DE_BSLS ALGR(KC_MINS)
 #define DE_AMPR S(KC_6)
-#define DE_SCLN S(KC_COMM)
 #define DE_COLN S(KC_DOT)
+#define DE_SCLN S(KC_COMM)
+#define DE_MINS KC_SLSH
 #define DE_AT ALGR(KC_Q)
 #define DE_DQOT S(KC_2)
 #define DE_QST S(KC_MINS)
