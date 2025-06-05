@@ -12,7 +12,7 @@ enum custom_keycodes {
 
 
 
-#define DUAL_FUNC_0 LT(5, KC_A)
+#define DUAL_FUNC_0 LT(9, KC_M)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_BSPC,        KC_C,           KC_T,           KC_I,           KC_E,           KC_O,           KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_B,           KC_N,           KC_R,           KC_S,           KC_G,           KC_DELETE,      
     KC_TRANSPARENT, KC_F,           KC_V,           DE_UE,          DE_AE,          DE_OE,                                          DE_Z,           KC_W,           DE_Y,           KC_Q,           KC_K,           KC_TRANSPARENT, 
     KC_LEFT_CTRL,   KC_TRANSPARENT, KC_LEFT_ALT,    KC_TRANSPARENT, KC_J,           KC_LEFT_GUI,                                                                                                    LALT(KC_F4),    DE_SS,          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_ENTER,       
-    MO(1),          KC_TRANSPARENT, KC_TAB,                         TO(4),          OSM(MOD_LSFT),  KC_SPACE
+    MO(1),          OSM(MOD_LSFT),  KC_TAB,                         TO(4),          OSM(MOD_RSFT),  KC_SPACE
   ),
   [1] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, DE_LPRN,        DE_RPRN,        DE_PERC,        DE_SLSH,        DE_BSLS,        KC_TRANSPARENT, 
