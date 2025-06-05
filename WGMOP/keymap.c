@@ -12,14 +12,14 @@ enum custom_keycodes {
 
 
 
-#define DUAL_FUNC_0 LT(2, KC_1)
+#define DUAL_FUNC_0 LT(6, KC_F8)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
     KC_ESCAPE,      KC_HOME,        KC_F2,          KC_END,         KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_MEDIA_PREV_TRACK,DUAL_FUNC_0,    KC_MEDIA_NEXT_TRACK,KC_NO,          KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,
-    KC_TRANSPARENT, KC_J,           KC_D,           KC_U,           KC_A,           KC_P,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_X,           KC_H,           KC_L,           KC_M,           KC_W,           KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_J,           KC_D,           KC_U,           KC_A,           KC_P,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_X,           KC_H,           KC_L,           KC_M,           DE_SS,          KC_TRANSPARENT, 
     KC_BSPC,        KC_C,           KC_T,           KC_I,           KC_E,           KC_O,           KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_B,           KC_N,           KC_R,           KC_S,           KC_G,           KC_DELETE,      
-    KC_TRANSPARENT, KC_F,           KC_V,           DE_UE,          DE_AE,          DE_OE,                                          DE_Y,           DE_Z,           KC_Q,           DE_SS,          KC_K,           KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_F,           KC_V,           DE_UE,          DE_AE,          DE_OE,                                          DE_Y,           DE_Z,           KC_W,           KC_Q,           KC_K,           KC_TRANSPARENT, 
     KC_LEFT_CTRL,   KC_TRANSPARENT, KC_LEFT_ALT,    KC_TRANSPARENT, OSM(MOD_LSFT),  KC_LEFT_GUI,                                                                                                    LALT(KC_F4),    OSM(MOD_RSFT),  KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_ENTER,       
     MO(1),          KC_TRANSPARENT, KC_TAB,                         TO(4),          KC_TRANSPARENT, KC_SPACE
   ),
