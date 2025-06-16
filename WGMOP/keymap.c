@@ -19,7 +19,7 @@ enum tap_dance_codes {
   DANCE_3,
 };
 
-#define DUAL_FUNC_0 LT(5, KC_0)
+#define DUAL_FUNC_0 LT(2, KC_F7)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [1] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, TT(3),          KC_UP,          TT(2),          KC_PSCR,        KC_TRANSPARENT,                                 KC_TRANSPARENT, DE_HASH,        DE_AMPR,        LSFT(DE_MINS),  LSFT(DE_HASH),  KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_DELETE,      KC_TRANSPARENT, KC_LEFT,        KC_DOWN,        KC_RIGHT,       TD(DANCE_0),    KC_TRANSPARENT,                                                                 KC_TRANSPARENT, DE_DQOT,        DE_QST,         DE_EXLM,        DE_MINS,        KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_DELETE,      KC_TRANSPARENT, KC_LEFT,        KC_DOWN,        KC_RIGHT,       TD(DANCE_0),    KC_MS_BTN3,                                                                     KC_TRANSPARENT, DE_DQOT,        DE_QST,         DE_EXLM,        DE_MINS,        KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_ENTER,       TD(DANCE_1),    TD(DANCE_2),    TD(DANCE_3),                                    DE_GRV,         DE_MORE,        DE_LESS,        DE_ACUT,        KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_NO,          DE_AT,          DE_PERC,        DE_EURO,        KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
