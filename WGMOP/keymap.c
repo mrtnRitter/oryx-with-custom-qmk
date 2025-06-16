@@ -19,13 +19,13 @@ enum tap_dance_codes {
   DANCE_3,
 };
 
-#define DUAL_FUNC_0 LT(2, KC_F7)
+#define DUAL_FUNC_0 LT(8, KC_Q)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
     KC_ESCAPE,      KC_TRANSPARENT, KC_HOME,        KC_F2,          KC_END,         KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_MEDIA_PREV_TRACK,DUAL_FUNC_0,    KC_MEDIA_NEXT_TRACK,KC_TRANSPARENT, KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,
     KC_TRANSPARENT, KC_TRANSPARENT, KC_D,           KC_U,           KC_A,           KC_X,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_P,           KC_H,           KC_L,           KC_M,           KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_BSPC,        KC_C,           KC_T,           KC_I,           KC_E,           KC_O,           KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_B,           KC_N,           KC_R,           KC_S,           KC_G,           KC_DELETE,      
+    KC_BSPC,        KC_C,           KC_T,           KC_I,           KC_E,           KC_O,           KC_MS_BTN3,                                                                     KC_TRANSPARENT, KC_B,           KC_N,           KC_R,           KC_S,           KC_G,           KC_DELETE,      
     KC_TRANSPARENT, KC_F,           KC_V,           DE_UE,          DE_AE,          DE_OE,                                          KC_W,           DE_Z,           DE_Y,           KC_Q,           KC_K,           KC_TRANSPARENT, 
     KC_LEFT_CTRL,   KC_TRANSPARENT, KC_LEFT_ALT,    KC_J,           KC_COMMA,       KC_LEFT_GUI,                                                                                                    LALT(KC_F4),    KC_DOT,         DE_SS,          KC_TRANSPARENT, KC_TRANSPARENT, KC_ENTER,       
     MO(1),          OSM(MOD_LSFT),  KC_TAB,                         TO(4),          OSM(MOD_RSFT),  KC_SPACE
@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [1] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, TT(3),          KC_UP,          TT(2),          KC_PSCR,        KC_TRANSPARENT,                                 KC_TRANSPARENT, DE_HASH,        DE_AMPR,        LSFT(DE_MINS),  LSFT(DE_HASH),  KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_DELETE,      KC_TRANSPARENT, KC_LEFT,        KC_DOWN,        KC_RIGHT,       TD(DANCE_0),    KC_MS_BTN3,                                                                     KC_TRANSPARENT, DE_DQOT,        DE_QST,         DE_EXLM,        DE_MINS,        KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_DELETE,      KC_TRANSPARENT, KC_LEFT,        KC_DOWN,        KC_RIGHT,       TD(DANCE_0),    KC_TRANSPARENT,                                                                 KC_TRANSPARENT, DE_DQOT,        DE_QST,         DE_EXLM,        DE_MINS,        KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_ENTER,       TD(DANCE_1),    TD(DANCE_2),    TD(DANCE_3),                                    DE_GRV,         DE_MORE,        DE_LESS,        DE_ACUT,        KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_NO,          DE_AT,          DE_PERC,        DE_EURO,        KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
