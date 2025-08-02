@@ -1,8 +1,8 @@
 #define DE_UE KC_LBRC
 #define DE_AE KC_QUOT
 #define DE_OE KC_SCLN
-#define DE_Z KC_Y
 #define DE_Y KC_Z
+#define DE_Z KC_Y
 #define DE_SS KC_MINS
 #define DE_LCBR ALGR(KC_7)
 #define DE_RCBR ALGR(KC_0)
